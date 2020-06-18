@@ -216,6 +216,11 @@ body{
 .project-text{
     width: 50%;
     padding: 0 120px 0 40px;
+    
+}
+.project-text > h4{
+    line-height: 40px;
+    margin-bottom: 50px;
 }
 
 .proj-hover{
