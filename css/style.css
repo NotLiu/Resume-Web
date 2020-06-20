@@ -54,6 +54,7 @@ body{
 #nav-name{
     position: absolute;
     float: left;
+    
 }
 
 #nav-name > a{
@@ -75,7 +76,7 @@ body{
     white-space: nowrap;
 }
 
-#nav > li > a:hover{
+#nav >li>a:hover{
     
     border-radius:6px;
     animation: fadein .5s forwards;
@@ -88,7 +89,7 @@ body{
     }
     100%{
         color: white;
-        background-color: rgb(67, 67, 148); 
+        background-color: cornflowerblue; 
     }
 }
 
@@ -178,14 +179,13 @@ body{
     }
 }
 
-// projects page
-
 #projectblock{
     display: inline-flex;
     flex-direction: column;
     align-items: center;
 
-    width: 100%;
+    width: 80%;
+    margin: 0 10%;
 }
 
 #project{
@@ -205,7 +205,7 @@ body{
 
 .project-date{
     position: absolute;
-    right: 70px;
+    right: 10%;
 }
 
 .projects{
@@ -230,12 +230,13 @@ body{
 .project-text > h4{
     line-height: 40px;
     margin-bottom: 50px;
+    margin-right: -100px;
 }
 
 .proj-hover{
     padding: 10px 0 30px 0;
 }
-.proj-hover:hover{
+/* .proj-hover:hover{
     background: linear-gradient(86deg, #080808, #080808, #8a89c0);
     background-size: 160% 160%;
 
@@ -255,7 +256,9 @@ body{
 @keyframes AnimationName {
     0%{background-position:5% 0%}
     100%{background-position:76% 100%}
-}
+} */
+
+
 #experience-block{
     color: white;
     margin: 60px 350px 50px;
@@ -276,4 +279,13 @@ body{
 
 .text-indent{
     margin-left: 6em;
+}
+
+#resume{
+    text-align: center;
+    color: cornflowerblue;
+}
+
+#email{
+    padding-left: 10px;
 }
