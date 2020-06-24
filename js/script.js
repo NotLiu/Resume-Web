@@ -4,7 +4,7 @@ window.addEventListener('load', function () {
 
     var path = window.location.pathname;
     var page = path.split("/").pop();
-
+    console.log(page);
 
     if (page == "andrew.liu.zone") {
         if (w < 450) {
