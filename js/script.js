@@ -3,9 +3,11 @@ window.addEventListener('load', function () {
     var w = window.screen.width;
 
     var page = window.location.href;
+    var page_slice = page.slice(Math.max(page.length - 16, 1));
     console.log(page);
+    console.log(page.slice(Math.max(page.length - 16, 1)));
 
-    if (page.slice(0, 16) != "andrew.liu.zone/p" && page.slice(0, 16) != "andrew.liu.zone/e") {
+    if (!page_slice.includes("projects.html") && !page_slice.includes("experiences.html")) {
         if (w < 450) {
             document.getElementById("nav-bar").style.fontSize = "medium";
             document.getElementById("aboutme").style.fontSize = "large";
@@ -13,7 +15,7 @@ window.addEventListener('load', function () {
             document.getElementById("image-banner").style.top = "initial";
         }
     }
-    else if (page.slice(0, 16) == "andrew.liu.zone/p") {
+    else if (page_slice.includes("projects.html")) {
 
         if (w < 450) {
             document.getElementById("nav-bar-nofix").style.fontSize = "medium";
