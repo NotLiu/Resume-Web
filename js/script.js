@@ -8,7 +8,7 @@ window.addEventListener('load', function () {
     console.log(page.slice(Math.max(page.length - 16, 1)));
 
     if (!page_slice.includes("projects.html") && !page_slice.includes("experiences.html")) {
-        if (w < 450) {
+        if (w < 500) {
             document.getElementById("nav-bar").style.fontSize = "medium";
             document.getElementById("aboutme").style.fontSize = "large";
             document.getElementById("image-banner").getElementsByTagName("img")[0].style.height = "initial";
@@ -17,14 +17,14 @@ window.addEventListener('load', function () {
     }
     else if (page_slice.includes("projects.html")) {
 
-        if (w < 450) {
+        if (w < 500) {
             document.getElementById("nav-bar-nofix").style.fontSize = "medium";
             document.getElementById("projectblock").style.fontSize = "large";
         }
     }
     else {
         document.getElementById("nav-bar-nofix").style.fontSize = "medium";
-        if (w < 450) {
+        if (w < 500) {
             document.getElementById("experience-block").style.fontSize = "large";
             document.getElementById("experience-block").style.margin = "8% 17% 7%";
             document.getElementById("involvement-block").style.fontSize = "large";
@@ -44,7 +44,7 @@ $win.on('scroll', function () {
     var page = path.split("/").pop();
 
     if (page == "index.html") {
-        if (w < 450) {
+        if (w < 500) {
             if (top > 300) {
                 document.getElementById("nav-bar").style.backgroundColor = 'rgba(8, 8, 8, 0.9)';
             }
