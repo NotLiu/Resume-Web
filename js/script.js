@@ -5,7 +5,8 @@ window.addEventListener('load', function () {
     var path = window.location.pathname;
     var page = path.split("/").pop();
 
-    if (page == "index.html") {
+
+    if (page == "andrew.liu.zone") {
         if (w < 450) {
             document.getElementById("nav-bar").style.fontSize = "medium";
             document.getElementById("aboutme").style.fontSize = "large";
@@ -13,7 +14,7 @@ window.addEventListener('load', function () {
             document.getElementById("image-banner").style.top = "initial";
         }
     }
-    else if (page == "projects.html") {
+    else if (page == "andrew.liu.zone/projects.html") {
 
         if (w < 450) {
             document.getElementById("nav-bar-nofix").style.fontSize = "medium";
